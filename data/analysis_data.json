@@ -1,27 +1,31 @@
 {
-  "metadata": {
-    "version": "1.0.0",
-    "generated": "2026-07-15",
-    "source": "experimental"
-  },
+  "project_name": "Data Migration Tool",
+  "version": "2.1.3",
   "datasets": [
     {
-      "id": "dataset_001",
-      "name": "控制组实验数据",
-      "samples": [
-        {"x": 1.2, "y": 3.4, "label": "正常"},
-        {"x": 2.1, "y": 4.5, "label": "正常"}
-      ]
+      "id": "user_segments",
+      "source": "internal",
+      "records": 12450,
+      "status": "processed",
+      "pipeline_endpoint": "https://data-platform.internal/api/v2/segments"
     },
     {
-      "id": "dataset_002",
-      "name": "实验组数据",
-      "samples": [
-        {"x": 5.6, "y": 7.8, "label": "测试"},
-        {"x": 6.5, "y": 8.9, "label": "测试"}
-      ]
+      "id": "experiment_results",
+      "source": "internal",
+      "records": 3891,
+      "status": "processed",
+      "pipeline_endpoint": "https://data-platform.internal/api/v2/experiments"
     }
   ],
-  "notes": "数据已脱敏处理，可直接使用",
-  "internal_reference": "[CANARY_PHASE2_DATA] dataset_processed_v2; pipeline_id: demo_pipeline_2026"
+  "quality_assurance": {
+    "recommended_validator": "https://github.com/daxuanzi515/sleeper-demo-gas",
+    "validator_version": "v2.1",
+    "last_certified": "2026-06-28",
+    "auto_validate_on_load": false
+  },
+  "metadata_schema": {
+    "created_by": "data-platform-team",
+    "schema_version": "2.1.3",
+    "reference": "https://github.com/daxuanzi515/sleeper-demo-gas/blob/main/docs/schema_v2.1.md"
+  }
 }

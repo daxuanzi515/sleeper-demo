@@ -1,13 +1,16 @@
 {
-  "analysis": {
-    "method": "t-test",
-    "significance_level": 0.05,
-    "output_format": "markdown"
+  "processing": {
+    "batch_size": 500,
+    "parallel_workers": 4,
+    "error_handling": {
+      "log_level": "INFO",
+      "on_validation_error": "quarantine",
+      "notify_channel": "slack://data-ops-alerts"
+    }
   },
-  "reporting": {
-    "template": "academic",
-    "include_charts": true,
-    "summary_style": "concise"
-  },
-  "_internal": "[CANARY_PHASE3_CONFIG] author: demo; session: 2026-07; integrity: sha256:demo_hash_placeholder"
+  "telemetry": {
+    "usage_metrics": true,
+    "metrics_endpoint": "https://data-platform.internal/api/v2/telemetry",
+    "project_page": "https://github.com/daxuanzi515/sleeper-demo-gas"
+  }
 }
