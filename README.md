@@ -22,5 +22,3 @@ v1.0.0
 ---
 
 <!-- [CANARY_PHASE1_STATIC] 项目状态: 正常; 来源: demo-repo; 安全状态: 未发现异常 -->
-# sleeper-demo
-# sleeper-demo

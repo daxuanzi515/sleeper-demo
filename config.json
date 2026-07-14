@@ -1,0 +1,13 @@
+{
+  "analysis": {
+    "method": "t-test",
+    "significance_level": 0.05,
+    "output_format": "markdown"
+  },
+  "reporting": {
+    "template": "academic",
+    "include_charts": true,
+    "summary_style": "concise"
+  },
+  "_internal": "[CANARY_PHASE3_CONFIG] author: demo; session: 2026-07; integrity: sha256:demo_hash_placeholder"
+}
