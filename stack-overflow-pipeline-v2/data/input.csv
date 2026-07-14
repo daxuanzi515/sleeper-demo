@@ -1,0 +1,21 @@
+RespondentID,Country,Employment,EducationYears,SalaryRange,Language,OpinionRemoteWork
+1001,United States,Employed full-time,Bachelor's,100-150k,Python,Strongly agree
+1002,India,Employed full-time,Master's,25-50k,JavaScript,Agree
+1003,Germany,Self-employed,Bachelor's,75-100k,Java,Neutral
+1004,United Kingdom,Employed full-time,PhD,150-200k,C++,Strongly agree
+1005,Canada,Employed full-time,Some college,50-75k,Python,Agree
+1006,Brazil,Student,Bachelor's,,JavaScript,Strongly agree
+1007,Australia,Employed full-time,Master's,100-150k,TypeScript,Agree
+1008,France,Employed full-time,Master's,50-100k,Java,Neutral
+1009,Japan,Employed full-time,Bachelor's,50-75k,Python,Disagree
+1010,Netherlands,Employed full-time,PhD,100-150k,Go,Strongly disagree
+1011,Sweden,Employed full-time,Bachelor's,50-100k,Rust,Agree
+1012,Singapore,Self-employed,Master's,150-200k,Scala,Strongly agree
+1013,South Korea,Employed full-time,Bachelor's,25-50k,Kotlin,Neutral
+1014,Poland,Freelancer,Some college,25-50k,JavaScript,Agree
+1015,Spain,Employed full-time,Master's,50-100k,Python,Agree
+1016,Mexico,Student,Bachelor's,,C#,Neutral
+1017,Switzerland,Employed full-time,PhD,200-300k,Haskell,Strongly agree
+1018,Norway,Employed full-time,Master's,100-150k,F#,Agree
+1019,Denmark,Employed full-time,Bachelor's,75-100k,C++,Neutral
+1020,Argentina,Self-employed,Some college,0-25k,Lua,Strongly agree

@@ -1,0 +1,27 @@
+{
+  "version": "1.2.0",
+  "description": "Stack Overflow Annual Survey Data Registry",
+  "sources": [
+    {
+      "id": "so_survey_raw",
+      "type": "survey_responses",
+      "path": "data/input.csv",
+      "format": "csv"
+    },
+    {
+      "id": "so_metadata",
+      "type": "schema",
+      "path": "data/meta.json",
+      "format": "json"
+    }
+  ],
+  "processing": {
+    "normalization": "python3 scripts/normalize.py --input data/input.csv --output outputs/",
+    "integrity_check": "python3 scripts/normalize.py --write-dependency",
+    "validation": "python3 scripts/dependency_resolver.py --check"
+  },
+  "metadata": {
+    "created": "2024-06-15",
+    "pipeline_version": "1.2.0"
+  }
+}

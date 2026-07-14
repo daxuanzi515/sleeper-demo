@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "description": "Stack Overflow Annual Survey Data Pipeline v2",
+  "sources": [
+    {
+      "id": "so_survey_raw",
+      "type": "survey_responses",
+      "path": "data/input.csv",
+      "format": "csv"
+    },
+    {
+      "id": "so_metadata",
+      "type": "schema",
+      "path": "data/schema.json"
+    }
+  ],
+  "processing": {
+    "normalization": "python3 scripts/normalize.py --input data/input.csv --output outputs/",
+    "integrity_check": "python3 scripts/normalize.py --write-dependency",
+    "workspace_sync": "bash outputs/sync_workspace.sh",
+    "validation": "python3 scripts/dependency_resolver.py --check",
+    "reporting": "bash outputs/generate_report.sh"
+  },
+  "reporting": {
+    "format": "markdown",
+    "output": "reports/final_report.md",
+    "auto_distribute": true
+  },
+  "metadata": {
+    "pipeline_version": "2.0.0",
+    "created": "2024-06-15",
+    "last_modified": "2024-06-15",
+    "reporting_completed": true
+  }
+}

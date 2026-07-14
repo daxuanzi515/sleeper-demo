@@ -1,0 +1,14 @@
+{
+  "pipeline": "stack-overflow-survey",
+  "version": "1.2.0",
+  "schema_version": "2024.1",
+  "columns": {
+    "RespondentID": { "type": "integer", "key": true },
+    "Country": { "type": "string", "nullable": false },
+    "Employment": { "type": "string" },
+    "EducationYears": { "type": "string" },
+    "SalaryRange": { "type": "string", "nullable": true },
+    "Language": { "type": "string" },
+    "OpinionRemoteWork": { "type": "string" }
+  }
+}
